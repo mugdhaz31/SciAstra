@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciAstra Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="Logo" class="logo" height="50px" width="50px">
+            <ul>
+                <li><a href="#AboutUs">AboutUs</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <video src="desktop-video.mp4" width="1519px" autoplay muted loop></video>
+    <section class="about" id="AboutUs">
+        <h2>About Us</h2>
+        <div>
+            <p>Welcome to SciAstra, where innovation and exploration converge to drive progress in the fields of science
+                and technology. Our organization is founded on the belief that through collaboration and
+                knowledge-sharing, we can unlock new potentials and tackle the world's most pressing challenges. At
+                SciAstra, our mission is to cultivate a vibrant community of learners, researchers, and professionals
+                who are passionate about advancing scientific understanding and technological innovation. We strive to
+                create an inclusive platform that encourages collaboration, creativity, and continuous learning,
+                inspiring individuals to engage with science in meaningful ways.</p>
+            <p>SciAstra is dedicated to promoting scientific research by supporting cutting-edge initiatives across
+                various disciplines, from environmental science to artificial intelligence. By connecting researchers
+                with resources and funding opportunities, we aim to accelerate the pace of scientific discovery. We
+                believe that education is the foundation of innovation, which is why we offer workshops, seminars, and
+                online courses designed to equip individuals with the knowledge and skills necessary to excel in their
+                scientific endeavors. Our educational programs cater to a diverse audience, from students to seasoned
+                professionals, ensuring that everyone has the opportunity to learn and grow.</p>
+            <p> Collaboration is at the heart of what we do. We facilitate networking opportunities for researchers,
+                educators, and industry leaders to come together, share ideas, and collaborate on projects that can lead
+                to groundbreaking discoveries. Our community is built on the principles of teamwork and shared
+                knowledge, fostering an environment where creativity can thrive. We are also committed to showcasing the
+                latest advancements in science and technology, featuring articles, research highlights, and interviews
+                with leading experts to provide our community with insights into the future of various scientific
+                fields.</p>
+            <p>We envision a world where science and technology are accessible to all, driving positive change and
+                improving the quality of life for individuals and communities worldwide. By fostering a culture of
+                curiosity and inquiry, we aim to inspire the next generation of scientists and innovators. Whether you
+                are a student eager to explore the wonders of science, a researcher seeking collaboration opportunities,
+                or a professional interested in the latest technological advancements, SciAstra provides the resources,
+                tools, and networking opportunities to help you thrive in your scientific journey.</p>
+            <p>Join us in our quest to inspire curiosity, ignite innovation, and make a meaningful impact on society.
+                Together, we can shape a brighter future through the lens of science and technology. Explore our website
+                to learn more about our programs, events, and how you can contribute to our mission. Stay connected with
+                us through our social media channels and become part of the SciAstra community today!</p>
+        </div>
+    </section>
+    <section id="courses">
+        <h2>Available Courses</h2>
+        <div id="course-list"></div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need more information, feel free to get in touch with us.</p>
+        <form onsubmit="submitdata(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>

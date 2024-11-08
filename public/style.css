@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fa; 
+    color: #333;
+}
+
+header {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section {
+    padding: 15px;
+    margin: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    padding: 15px;
+    text-align: justify;
+}
+
+.about div {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about div{
+    margin: 20px;
+}
+
+#course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-card {
+    margin: 16px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    text-align: left;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card h3 {
+    color: #3d5afe;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.price-section {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.original-price {
+    color: #a1a1a1;
+    text-decoration: line-through;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.description {
+    text-align: justify;
+    padding: 10px;
+    color: #555;
+}
+
+.discounted-price {
+    color: #0c229e;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.discount {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #3d5afe;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #5a75ff;
+    transform: translateY(-3px);
+}
+#contact {
+    padding: 40px;
+    background-color: #f0f4f8;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+
+#contact p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9em;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    resize: none;
+}
+
+#contact button.btn {
+    align-self: center;
+    padding: 10px 30px;
+    background-color: #3d5afe;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button.btn:hover {
+    background-color: #5a75ff;
+}
+
+
+@media (max-width: 700px) {
+    section {
+        margin: 10px;
+    }
+
+    .course-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #contact form {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    video{
+        width: 100vh;
+    }
+}
+@media (max-width: 1024px) {
+    #course-list {
+        flex-direction: row;
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    .course-card {
+        width: 45%;
+    }
+
+    #contact form {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    #course-list {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .course-card {
+        width: 400px;
+    }
+}
