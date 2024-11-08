@@ -1,6 +1,6 @@
 To make the website , i referred the main SciAstra website structure. I used the video used in the main website in the homepage as well.
 
-The images of the immplemmented responsive website :
+The images of the implemented responsive website :
 
 ![Screenshot 2024-11-08 190836](https://github.com/user-attachments/assets/4388965b-e813-45ac-be61-6a4c26daacdb)
 ![Screenshot 2024-11-08 190856](https://github.com/user-attachments/assets/43a10b0f-6acb-494c-b088-97bbbd397ced)
@@ -13,3 +13,9 @@ video :
 
 https://github.com/user-attachments/assets/79aca0ef-176b-46bb-bb78-4e97f0238982
 
+The steps to implement the project are :
+
+1. Create a Node.js project.
+2. Install the dependencies express, mysql, body-parser.
+3. Copy paste the folders and files in the project.
+4. Start the project using node server.js.
